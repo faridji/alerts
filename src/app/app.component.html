@@ -1,1 +1,31 @@
-<h1>{{ title }}</h1>
+<div fxLayout="row wrap">
+  <div fxFlex="100">
+    <h1>{{ title }}</h1>
+  </div>
+
+  <div fxFlex="80" fxLayout="row" fxLayoutAlign="space-around center">
+    <button mat-raised-button color="primary" (click)="successDialog()">
+      Success Dialog
+    </button>
+
+    <button mat-raised-button color="warn" (click)="errorDialog()">
+      Error Dialog
+    </button>
+
+    <button mat-raised-button color="primary" (click)="warningDialog()">
+      Warning Dialog
+    </button>
+
+    <button mat-raised-button color="primary" (click)="infoDialog()">
+      Info Dialog
+    </button>
+
+    <button mat-raised-button color="primary" (click)="confirmDialog()">
+      Confirm Dialog
+    </button>
+
+    <button mat-raised-button color="primary" (click)="confirmWithInputDialog()">
+      Confirm With Input Dialog
+    </button>
+  </div>
+</div>

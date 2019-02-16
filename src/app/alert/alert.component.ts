@@ -20,8 +20,7 @@ export class AlertComponent implements OnInit {
 
   constructor(
     private dialogRef: MatDialogRef<AlertComponent>,
-    private _fb: FormBuilder
-  ) {
+    private _fb: FormBuilder) {
     this.theForm = _fb.group({
       input: new FormControl()
     });
